@@ -1,8 +1,8 @@
 // Write your code here
+import {Component} from 'react'
 import './index.css'
 import Loader from 'react-loader-spinner'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
-import {Component} from 'react'
 import LatestMatch from '../LatestMatch'
 import MatchCard from '../MatchCard'
 
@@ -51,9 +51,9 @@ class TeamMatches extends Component {
                 firstInnings: recentMatch.first_innings,
                 secondInnings: recentMatch.second_innings,
                 matchStatus: recentMatch.match_status,
-            })),
+            }))
         }
-        this.setState({matchesData: updatedData, isLoading: false})
+        this.setState({ matchesData: updatedData, isLoading: false})
     }
 
     renderTeamMatches = () => {
@@ -99,6 +99,6 @@ class TeamMatches extends Component {
         )
     }
   }
-}
+
 
 export default TeamMatches
